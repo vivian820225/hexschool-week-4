@@ -1,0 +1,197 @@
+.footer {
+    color: $white;
+    background-color: $primary;
+    position: relative;
+}
+
+.footer_wrapper {
+    max-width: 1246px;
+    margin: 0 auto;
+    padding: 0 48px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+}
+
+.footer_link_wrapper {
+    margin-bottom: 18px;
+}
+
+.footer_link {
+    li {
+        margin: 0 24px;
+        &:first-of-type {
+            margin-left: 0;
+        }
+    }
+}
+
+.social_media_wrapper {
+    li {
+        margin: 0 16px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+.contact_info {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    @include font_en;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.5;
+    border-bottom: 1px solid $white;
+    li {
+        margin-bottom: 16px;
+        &:last-of-type {
+            margin-bottom: initial;
+        }
+    }
+}
+
+.icon {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.i_phone {
+    background-image: url(../images/icon-phone-white.svg);
+    background-size: 36px auto;
+}
+
+.i_mail {
+    background-image: url(../images/icon-mail.svg);
+}
+
+.logo_sm {
+    margin-right: 38px;
+}
+
+.copyright_text {
+    @include font_en;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.content_info {
+    font-size: 14px;
+    li {
+        margin: 0 31px;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer_wrapper {
+        padding: 40px 48px;
+    }
+    .footer_link_wrapper {
+        margin-bottom: 24px;
+    }
+
+    .footer_link {
+        li {
+            margin: 0 20px;
+        }
+    }
+    .contact_info {
+        font-size: 20px;
+        li {
+            margin-bottom: 9px;
+        }
+    }
+
+    .icon_social_media {
+        width: 24px;
+        height: 24px;
+    }
+
+    .icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .i_phone {
+        background-size: 23px auto;
+    }
+
+    .logo_sm {
+        display: none;
+    }
+
+    .content_info {
+        li {
+            margin: 0 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer_wrapper {
+        padding: 24px 12px;
+    }
+
+    .footer_link_wrapper {
+        position: absolute;
+        right: 12px;
+    }
+
+    .footer_link {
+        display: none;
+    }
+
+    .social_media_wrapper {
+        li {
+            margin: 0 12px;
+        }
+    }
+
+    .contact_info {
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+
+    .i_phone {
+        background-size: 13px auto;
+    }
+
+    .logo_sm {
+        display: block;
+        width: 46px;
+        margin-right: initial;
+        position: absolute;
+        right: 12px;
+        bottom: 20px;
+    }
+
+    .copyright_text {
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .content_info {
+        li {
+            margin: 0;
+            margin-bottom: 8px;
+            line-height: 21px;
+            &:last-of-type {
+                margin-bottom: initial;
+            }
+        }
+    }
+}
